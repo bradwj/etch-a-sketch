@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etch-a-Sketch</title>
+    <title>Pixel Art Creator</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    
+
+    <h1 class="title">Pixel Art Creator</h1>
+
+    <main class="main">
+        <div class="settings">
+            <input type="color" id="colorPicker">
+
+        
+            <form id="sizePicker">
+                Size
+                <input type="number" name="size" id="inputSize" min="1" max="100" value="32">
+                <input type="submit">
+            </form>
+
+            <button type="button" id="clearButton">Clear</button>
+
+        </div>
+
+        <div id="canvas"></div>
+    </main>
+
+
+
 </body>
 </html>
